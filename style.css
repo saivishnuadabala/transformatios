@@ -1,0 +1,52 @@
+.container {
+    /* display: flex; */
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 150px;
+    margin-top: 50px;
+}
+
+.b {
+    width: 100px;
+    margin: 10px 0;
+    height: 50px;
+    margin-left: 100px;
+    border-radius: 20px;
+    background-color:aqua;
+    box-shadow: 3px 3px 3px;
+    font-weight: 600;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.b1 {
+    transition: background-color 2s;
+}
+
+/* Apply the transformation when hovering over .b1 */
+.b1:hover ~ .image > .im {
+    transform: translate(54px, 65px);
+    transition: transform 2s;
+}
+
+.b2:hover ~ .image > .im {
+    transform: scale(1.2,1.3);
+    transition: transform 2s;
+}
+.b3:hover ~ .image > .im {
+    transform: skew(45deg);
+    transition: transform 2s;
+}
+.b4:hover ~ .image > .im {
+    transform: rotateX(180deg);
+    transition: transform 4s;
+}
+body{
+    background-color: antiquewhite;
+}
+
+span{
+    color: red;
+}
